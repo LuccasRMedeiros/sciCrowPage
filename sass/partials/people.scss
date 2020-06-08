@@ -1,0 +1,40 @@
+#people{
+    width:100%;
+
+    #black{
+        background-color: black;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: $sci-pink;
+            margin: 3% 0 4%;
+            width: pixel-to-rem(910px);
+            height: pixel-to-rem(270px);
+
+            h2{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    img{
+        width: get-percentage(710, 50);
+        height: get-percentage(956, 50);
+        position: relative;
+        right: 165px;
+        clip-path: polygon(50% 20%, 85% 35%, 85% 65%, 50% 80%, 15% 65%, 15% 35%);
+    }
+}

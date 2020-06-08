@@ -1,0 +1,47 @@
+#games{
+    background-color: black;
+    padding-bottom: 5%;
+    
+
+    header{
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+
+    }
+    article{
+        display: flex;
+        height: fit-content;
+
+        p{
+            width: 70%;
+        }
+
+        #gameselect,
+        #dropinfo{
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            display: block;
+        }
+        
+        #dropinfo{
+            background-color:rgba(255, 255, 255, .4);
+        }
+        
+        .gamelink{
+            width: pixel-to-rem(500px);
+            height: pixel-to-rem(200px);
+            transition: all 1.2s;
+            z-index: 4;
+        
+            &:hover{
+                height: pixel-to-rem(300px);
+            }
+        }
+    }
+
+    div{
+        padding: 0;
+        margin: pixel-to-rem(12px);
+    }
+}
+

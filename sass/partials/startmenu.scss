@@ -1,0 +1,37 @@
+#startmenu{
+    width:100%;
+    padding-left: pixel-to-rem(120px);
+    padding-top: pixel-to-rem(40px);
+    margin-bottom: pixel-to-rem(30px);
+
+    nav{
+        width: fit-content;
+        border-bottom: 1px solid white;
+
+        li{
+            display: inline-block;
+            margin: pixel-to-rem(15px);
+
+            a{
+                margin: 0;
+                padding: 0;
+
+                &:hover{
+                    font-weight: 500;
+                    color: rgb(235, 235, 235);
+                }
+
+                &:active{
+                    font-weight: 500;
+                    color: rgb(0, 255, 255);
+                }
+
+                &:visited{
+                    font-weight: 300;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: "Open sans";
+  font-size: 24px;
+  overflow: hidden;
+  scrollbar-width: 3px;
+  scrollbar-base-color: rgba(205, 205, 205, 0.5);
+  scrollbar-arrow-color: rgba(235, 235, 235, 0.7);
+  scrollbar-highlight-color: rgba(205, 205, 205, 0.7); }
+
+h1, h2, h3, h4, h5 h6, p, figure {
+  color: white;
+  font-weight: normal; }
+
+header {
+  margin: 0 0 5%;
+  background-color: #00b1eb;
+  padding: 2em; }
+  header h1 {
+    font-family: 'Open sans';
+    font-weight: 700;
+    color: black; }
+
+h1 {
+  font-family: Jost;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  text-align: initial; }
+
+p,
+a {
+  font-family: Jost;
+  font-weight: 200;
+  color: white;
+  text-align: justify;
+  text-decoration: none;
+  margin: 0.7em 4em; }
+
+svg {
+  width: 100%;
+  height: 100%; }
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; }
+  #landing h1 {
+    font-family: "Open sans";
+    font-size: 1.16667rem;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    transition: .5s; }
+  #landing input[type="button"] {
+    align-self: center;
+    outline: none;
+    background-color: white;
+    font-family: "Open sans";
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    margin: 1em;
+    padding: 0.4em;
+    border: none;
+    border-radius: 2px;
+    transition: .5s; }
+    #landing input[type="button"]:hover {
+      background-color: #c8f5ff; }
+    #landing input[type="button"]:active {
+      background-color: #969696; }
+
+#logo {
+  width: 100%;
+  height: 35vh;
+  padding: 4%;
+  overflow: hidden;
+  transition: all 2s; }
+
+#cyan {
+  animation-name: cyan-glitch;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#magenta {
+  animation-name: magenta-glitch;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+@keyframes cyan-glitch {
+  0% {
+    transform: skew(0); }
+  10% {
+    transform: translate(5px); }
+  20% {
+    transform: skew(2deg); }
+  30% {
+    transform: skew(0.5deg); }
+  35% {
+    transform: translate(3px); }
+  40% {
+    transform: skew(6deg); }
+  45% {
+    transform: translate(-7px); }
+  50% {
+    transform: skew(2deg); }
+  55% {
+    transform: translate(4px); }
+  60% {
+    transform: skew(3deg); }
+  70% {
+    transform: skew(5deg); }
+  80% {
+    transform: translate(-3px); }
+  90% {
+    transform: translate(0); }
+  100% {
+    transform: skew(0); } }
+
+@keyframes magenta-glitch {
+  0% {
+    transform: skew(0); }
+  10% {
+    transform: translate(-5px); }
+  20% {
+    transform: skew(-2deg); }
+  30% {
+    transform: skew(-0.5deg); }
+  35% {
+    transform: translate(-3px); }
+  40% {
+    transform: skew(-6deg); }
+  45% {
+    transform: translate(7px); }
+  50% {
+    transform: skew(-2deg); }
+  55% {
+    transform: translate(-4px); }
+  60% {
+    transform: skew(-3deg); }
+  70% {
+    transform: skew(-5deg); }
+  80% {
+    transform: translate(3px); }
+  90% {
+    transform: translate(0); }
+  100% {
+    transform: skew(0); } }
+
+#super {
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: fixed;
+  bottom: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 1.2s;
+  z-index: 2; }
+  #super section,
+  #super header,
+  #super article {
+    max-width: -webkit-fill-available;
+    width: 100%;
+    z-index: 3; }
+
+#startmenu {
+  width: 100%;
+  padding-left: 5rem;
+  padding-top: 1.66667rem;
+  margin-bottom: 1.25rem; }
+  #startmenu nav {
+    width: fit-content;
+    border-bottom: 1px solid white; }
+    #startmenu nav li {
+      display: inline-block;
+      margin: 0.625rem; }
+      #startmenu nav li a {
+        margin: 0;
+        padding: 0; }
+        #startmenu nav li a:hover {
+          font-weight: 500;
+          color: #ebebeb; }
+        #startmenu nav li a:active {
+          font-weight: 500;
+          color: cyan; }
+        #startmenu nav li a:visited {
+          font-weight: 300;
+          color: white; }
+
+#about {
+  padding: 2% 5%;
+  margin-bottom: 6%; }
+  #about article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #about h1,
+  #about p {
+    line-height: 2.2em;
+    width: 60%; }
+  #about h1 {
+    text-align: left;
+    margin: 0.7em 4em; }
+
+#games {
+  background-color: black;
+  padding-bottom: 5%; }
+  #games header {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); }
+  #games article {
+    display: flex;
+    height: fit-content; }
+    #games article p {
+      width: 70%; }
+    #games article #gameselect,
+    #games article #dropinfo {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      display: block; }
+    #games article #dropinfo {
+      background-color: rgba(255, 255, 255, 0.4); }
+    #games article .gamelink {
+      width: 20.83333rem;
+      height: 8.33333rem;
+      transition: all 1.2s;
+      z-index: 4; }
+      #games article .gamelink:hover {
+        height: 12.5rem; }
+  #games div {
+    padding: 0;
+    margin: 0.5rem; }
+
+#people {
+  width: 100%; }
+  #people #black {
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+  #people header {
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%); }
+  #people article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #people article div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #e6007e;
+      margin: 3% 0 4%;
+      width: 37.91667rem;
+      height: 11.25rem; }
+      #people article div h2 {
+        font-size: 1.1rem; }
+  #people img {
+    width: 355px;
+    height: 478px;
+    position: relative;
+    right: 165px;
+    clip-path: polygon(50% 20%, 85% 35%, 85% 65%, 50% 80%, 15% 65%, 15% 35%); }
+
+#jobs {
+  width: 100%;
+  height: 100vh; }
+  #jobs header {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); }
