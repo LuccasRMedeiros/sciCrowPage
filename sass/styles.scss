@@ -28,14 +28,11 @@ $sci-pink: #e6007e;
   margin: 0;
   padding: 0; }
 
-html {
+:root {
   font-family: "Open sans";
   font-size: $default-font-size;
   overflow: hidden;
-  scrollbar-width: 3px;
-  scrollbar-base-color: rgba(205, 205, 205, 0.5);
-  scrollbar-arrow-color: rgba(235, 235, 235, 0.7);
-  scrollbar-highlight-color: rgba(205, 205, 205, 0.7); }
+  }
 
 h1, h2, h3, h4, h5 h6, p, figure {
   color: white;
@@ -84,3 +81,223 @@ svg{
 @import "partials/games.scss";
 @import "partials/people.scss";
 @import "partials/jobs.scss";
+
+// ============= //
+// Media queries //
+// ============= //
+
+@media screen and (max-width: 1200px) {
+
+  :root{
+    font-size: $default-font-size - 4px;
+  }
+
+  #about {
+    margin-bottom: 10%;
+  }
+
+  #games{
+    
+    p{
+      width: 80%;
+    }
+
+    #gameselect{
+      width: 40%;
+    }
+
+    #dropinfo{
+      width: 60%;
+    }
+
+    .gamelink{
+      width: pixel-to-rem(450px);
+      height: pixel-to-rem(150px);
+  
+      &:hover{
+          height: pixel-to-rem(250px);
+      }
+    }
+  }
+
+  #people{
+
+    div{
+      width: pixel-to-rem(700px);
+      height: pixel-to-rem(230px);
+    }
+
+    img{
+        width: get-percentage(710, 40);
+        height: get-percentage(956, 40);
+        position: relative;
+        right: 135px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  :root{
+    font-size: $default-font-size - 6px;
+  }
+
+  #about {
+    margin-bottom: 12%;
+  }
+
+  #games{
+    
+    p{
+      width: 80%;
+    }
+
+    #gameselect{
+      width: 35%;
+    }
+
+    #dropinfo{
+      width: 65%;
+    }
+
+    .gamelink{
+      width: pixel-to-rem(420px);
+      height: pixel-to-rem(120px);
+  
+      &:hover{
+          height: pixel-to-rem(220px);
+      }
+    }
+  }
+
+  #people{
+
+    div{
+      width: pixel-to-rem(700px);
+      height: pixel-to-rem(230px);
+    }
+    
+    img{
+        width: get-percentage(710, 40);
+        height: get-percentage(956, 40);
+        position: relative;
+        right: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  :root{
+    font-size: $default-font-size - 4px;
+  }
+
+  #about {
+    margin-bottom: 15%;
+  }
+
+  #games{
+    
+    p{
+      width: 100%;
+    }
+
+    #gameselect{
+      width: 100%;
+    }
+
+    #dropinfo{
+      visibility: hidden;
+    }
+
+    .gamelink{
+      width: pixel-to-rem(500px);
+      height: pixel-to-rem(200px);
+  
+      &:hover{
+          height: pixel-to-rem(300px);
+      }
+    }
+  }
+
+  #people{
+
+    div{
+      width: pixel-to-rem(400px);
+      height: pixel-to-rem(200px);
+    }
+    
+    img{
+        width: get-percentage(710, 20);
+        height: get-percentage(956, 20);
+        position: relative;
+        right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  :root{
+    font-size: $default-font-size - 4px;
+  }
+
+  #startmenu{
+    padding-left: pixel-to-rem(40px);
+    
+    li{
+      margin: 4px;
+      
+      a{
+        font-size: .7rem;
+      }
+    }
+  }
+
+  #about {
+    margin-bottom: 15%;
+
+    h1{
+      font-size: 1.2rem;
+    }
+  }
+
+  #games{
+    
+    p{
+      width: 100%;
+    }
+
+    #gameselect{
+      width: 100%;
+    }
+
+    #dropinfo{
+      visibility: hidden;
+    }
+
+    .gamelink{
+      width: pixel-to-rem(500px);
+      height: pixel-to-rem(200px);
+  
+      &:hover{
+          height: pixel-to-rem(300px);
+      }
+    }
+  }
+
+  #people{
+
+    div{
+      width: pixel-to-rem(400px);
+      height: pixel-to-rem(200px);
+    }
+    
+    img{
+        width: get-percentage(710, 20);
+        height: get-percentage(956, 20);
+        position: relative;
+        right: 50px;
+    }
+  }
+}

@@ -9,6 +9,11 @@
     transition: all 1.2s;
     z-index: 2;
 
+    scrollbar-width: 3px;
+    scrollbar-base-color: rgba(205, 205, 205, 0.5);
+    scrollbar-arrow-color: rgba(235, 235, 235, 0.7);
+    scrollbar-highlight-color: rgba(205, 205, 205, 0.7);
+
     section,
     header,
     article{

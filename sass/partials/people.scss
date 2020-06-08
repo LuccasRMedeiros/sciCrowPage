@@ -4,10 +4,12 @@
     #black{
         background-color: black;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        width: 100%;
     }
 
     header{
         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+        width: 100%;
     }
 
     article{
@@ -21,7 +23,7 @@
             align-items: center;
             background-color: $sci-pink;
             margin: 3% 0 4%;
-            width: pixel-to-rem(910px);
+            width: pixel-to-rem(850px);
             height: pixel-to-rem(270px);
 
             h2{

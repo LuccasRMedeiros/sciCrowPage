@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0; }
 
-html {
+:root {
   font-family: "Open sans";
   font-size: 24px;
-  overflow: hidden;
-  scrollbar-width: 3px;
-  scrollbar-base-color: rgba(205, 205, 205, 0.5);
-  scrollbar-arrow-color: rgba(235, 235, 235, 0.7);
-  scrollbar-highlight-color: rgba(205, 205, 205, 0.7); }
+  overflow: hidden; }
 
 h1, h2, h3, h4, h5 h6, p, figure {
   color: white;
@@ -172,7 +168,11 @@ svg {
   bottom: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 1.2s;
-  z-index: 2; }
+  z-index: 2;
+  scrollbar-width: 3px;
+  scrollbar-base-color: rgba(205, 205, 205, 0.5);
+  scrollbar-arrow-color: rgba(235, 235, 235, 0.7);
+  scrollbar-highlight-color: rgba(205, 205, 205, 0.7); }
   #super section,
   #super header,
   #super article {
@@ -244,17 +244,16 @@ svg {
       z-index: 4; }
       #games article .gamelink:hover {
         height: 12.5rem; }
-  #games div {
-    padding: 0;
-    margin: 0.5rem; }
 
 #people {
   width: 100%; }
   #people #black {
     background-color: black;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    width: 100%; }
   #people header {
-    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+    width: 100%; }
   #people article {
     display: flex;
     flex-direction: column;
@@ -265,7 +264,7 @@ svg {
       align-items: center;
       background-color: #e6007e;
       margin: 3% 0 4%;
-      width: 37.91667rem;
+      width: 35.41667rem;
       height: 11.25rem; }
       #people article div h2 {
         font-size: 1.1rem; }
@@ -281,3 +280,113 @@ svg {
   height: 100vh; }
   #jobs header {
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); }
+
+@media screen and (max-width: 1200px) {
+  :root {
+    font-size: 20px; }
+  #about {
+    margin-bottom: 10%; }
+  #games p {
+    width: 80%; }
+  #games #gameselect {
+    width: 40%; }
+  #games #dropinfo {
+    width: 60%; }
+  #games .gamelink {
+    width: 18.75rem;
+    height: 6.25rem; }
+    #games .gamelink:hover {
+      height: 10.41667rem; }
+  #people div {
+    width: 29.16667rem;
+    height: 9.58333rem; }
+  #people img {
+    width: 284px;
+    height: 382.4px;
+    position: relative;
+    right: 135px; } }
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 18px; }
+  #about {
+    margin-bottom: 12%; }
+  #games p {
+    width: 80%; }
+  #games #gameselect {
+    width: 35%; }
+  #games #dropinfo {
+    width: 65%; }
+  #games .gamelink {
+    width: 17.5rem;
+    height: 5rem; }
+    #games .gamelink:hover {
+      height: 9.16667rem; }
+  #people div {
+    width: 29.16667rem;
+    height: 9.58333rem; }
+  #people img {
+    width: 284px;
+    height: 382.4px;
+    position: relative;
+    right: 80px; } }
+
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: 20px; }
+  #about {
+    margin-bottom: 15%; }
+  #games p {
+    width: 100%; }
+  #games #gameselect {
+    width: 100%; }
+  #games #dropinfo {
+    visibility: hidden; }
+  #games .gamelink {
+    width: 20.83333rem;
+    height: 8.33333rem; }
+    #games .gamelink:hover {
+      height: 12.5rem; }
+  #people div {
+    width: 16.66667rem;
+    height: 8.33333rem; }
+  #people img {
+    width: 142px;
+    height: 191.2px;
+    position: relative;
+    right: 50px; } }
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 20px; }
+  #startmenu {
+    padding-left: 1.66667rem; }
+    #startmenu li {
+      margin: 4px; }
+      #startmenu li a {
+        font-size: .7rem; }
+  #about {
+    margin-bottom: 15%; }
+    #about h1 {
+      font-size: 1.2rem; }
+  #games p {
+    width: 100%; }
+  #games #gameselect {
+    width: 100%; }
+  #games #dropinfo {
+    visibility: hidden; }
+  #games .gamelink {
+    width: 20.83333rem;
+    height: 8.33333rem; }
+    #games .gamelink:hover {
+      height: 12.5rem; }
+  #people div {
+    width: 16.66667rem;
+    height: 8.33333rem; }
+  #people img {
+    width: 142px;
+    height: 191.2px;
+    position: relative;
+    right: 50px; } }
+
+    
