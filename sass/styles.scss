@@ -98,24 +98,26 @@ svg{
 
   #games{
     
-    p{
-      width: 80%;
-    }
+    article{
+      p{
+        width: 80%;
+      }
 
-    #gameselect{
-      width: 40%;
-    }
+      #gameselect{
+        width: 40%;
+      }
 
-    #dropinfo{
-      width: 60%;
-    }
+      #dropinfo{
+        width: 60%;
+      }
 
-    .gamelink{
-      width: pixel-to-rem(450px);
-      height: pixel-to-rem(150px);
+      .gamelink{
+        width: pixel-to-rem(450px);
+        height: pixel-to-rem(150px);
   
-      &:hover{
+        &:hover{
           height: pixel-to-rem(250px);
+        }
       }
     }
   }
@@ -245,11 +247,13 @@ svg{
   #startmenu{
     padding-left: pixel-to-rem(40px);
     
-    li{
-      margin: 4px;
+    nav{
+      li{
+        margin: 4px;
       
-      a{
-        font-size: .7rem;
+          a{
+          font-size: .7rem;
+        }
       }
     }
   }

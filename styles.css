@@ -286,16 +286,16 @@ svg {
     font-size: 20px; }
   #about {
     margin-bottom: 10%; }
-  #games p {
+  #games article p {
     width: 80%; }
-  #games #gameselect {
+  #games article #gameselect {
     width: 40%; }
-  #games #dropinfo {
+  #games article #dropinfo {
     width: 60%; }
-  #games .gamelink {
+  #games article .gamelink {
     width: 18.75rem;
     height: 6.25rem; }
-    #games .gamelink:hover {
+    #games article .gamelink:hover {
       height: 10.41667rem; }
   #people div {
     width: 29.16667rem;
@@ -361,9 +361,9 @@ svg {
     font-size: 20px; }
   #startmenu {
     padding-left: 1.66667rem; }
-    #startmenu li {
+    #startmenu nav li {
       margin: 4px; }
-      #startmenu li a {
+      #startmenu nav li a {
         font-size: .7rem; }
   #about {
     margin-bottom: 15%; }
@@ -388,5 +388,3 @@ svg {
     height: 191.2px;
     position: relative;
     right: 50px; } }
-
-    
