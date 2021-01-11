@@ -91,21 +91,25 @@ svg{
   :root{
     font-size: $default-font-size - 4px;
   }
+}
+
 @media screen and (max-width: 900px) {
 
   :root{
     font-size: $default-font-size - 6px;
   }
+}
 
 @media screen and (max-width: 750px) {
 
   :root{
     font-size: $default-font-size - 4px;
   }
+}
 
 @media screen and (max-width: 400px) {
 
   :root{
     font-size: $default-font-size - 4px;
   }
-
+}

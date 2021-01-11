@@ -1,5 +1,4 @@
 function initialize() {
-    console.log("Initializing...");
     $("#landing > h1").css("opacity", "0");
     $("#landing > h1").css("font-size", "0");
     $("#landing > h1").css("padding", "0");
