@@ -249,11 +249,8 @@ svg {
         height: 12.5rem; }
 
 #people {
+  background-color: black;
   width: 100%; }
-  #people #black {
-    background-color: black;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    width: 100%; }
   #people header {
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
     width: 100%; }
@@ -279,6 +276,7 @@ svg {
     clip-path: polygon(50% 20%, 85% 35%, 85% 65%, 50% 80%, 15% 65%, 15% 35%); }
 
 #jobs {
+  background-color: black;
   width: 100%;
   height: 100vh; }
   #jobs header {

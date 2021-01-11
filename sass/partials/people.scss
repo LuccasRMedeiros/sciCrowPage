@@ -1,11 +1,6 @@
 #people{
+    background-color: black;
     width:100%;
-
-    #black{
-        background-color: black;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        width: 100%;
-    }
 
     header{
         clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
