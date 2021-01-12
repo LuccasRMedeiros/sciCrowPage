@@ -1,0 +1,24 @@
+footer{
+    background-color: $sci-blue;
+    padding: pixel-to-rem(70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    h5, h6{
+        margin: pixel-to-rem(10px);
+    }
+
+    img{
+        width: pixel-to-rem(100px);
+        height: pixel-to-rem(100px);
+        margin: pixel-to-rem(20px);
+        transition: 1s;
+
+        &:hover{
+            width: pixel-to-rem(105px);
+            height: pixel-to-rem(105px);
+        }
+    }
+}

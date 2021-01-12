@@ -284,8 +284,26 @@ svg {
   #jobs h2 {
     font-family: Jost;
     font-weight: bold; }
-  #jobs p {
-    margin: 0; }
+  #jobs p.sad-message {
+    margin: 2.91667rem, 0; }
+
+footer {
+  background-color: #00b1eb;
+  padding: 2.91667rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  footer h5, footer h6 {
+    margin: 0.41667rem; }
+  footer img {
+    width: 4.16667rem;
+    height: 4.16667rem;
+    margin: 0.83333rem;
+    transition: 1s; }
+    footer img:hover {
+      width: 4.375rem;
+      height: 4.375rem; }
 
 @media screen and (max-width: 1200px) {
   :root {

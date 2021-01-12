@@ -6,13 +6,13 @@
     header{
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
     }
-
+    
     h2{
        font-family: Jost;
        font-weight: bold; 
     }
 
-    p{
-        margin: 0;
+    p.sad-message{
+        margin: pixel-to-rem(70px), 0;
     }
 }
